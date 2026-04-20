@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:text="Contact Book"
+            android:textColor="#B388FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Full Name"
+            android:textColor="#FFFFFF"
+            android:hintTextColor="#888888"
+            android:background="#111111"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone Number"
+            android:textColor="#FFFFFF"
+            android:hintTextColor="#888888"
+            android:background="#111111"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="ID (for Update/Delete)"
+            android:textColor="#FFFFFF"
+            android:hintTextColor="#888888"
+            android:background="#111111"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Add Contact"
+            android:textColor="#FFFFFF"
+            android:background="#7E57C2"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="View All Contacts"
+            android:textColor="#00FFFF"
+            android:background="#000000"
+            android:layout_marginBottom="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Update"
+                android:textColor="#CCCCCC"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:textColor="#FF5252"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
